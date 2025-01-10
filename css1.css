@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 1.1em
+}
+
+header {
+
+    background-image:url(header2.jpg);
+    background-size: 100% auto;
+    height:100px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.3em; 
+    z-index: 1; 
+}
+
+
+nav ul {
+    background-color: rgb(70, 72, 72);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;    
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #007BFF; 
+    text-decoration: underline; 
+    font-weight: bold; 
+}
+#start{
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#start h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(70, 72, 72); 
+    padding-bottom: 5px; 
+}
+
+#toc {
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+#toc h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(70, 72, 72); 
+    padding-bottom: 5px; 
+}
+
+#toc img {
+    
+    display: block;         /* 画像を縦方向に配置 */
+    width: 400px;           /* 画像の幅を調整 */
+    height: auto;           /* アスペクト比を維持 */
+    border-radius: 10px;    /* 画像の角を丸く */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 画像に軽い影 */
+}
+
+
+#toc ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#toc ul li {
+    margin: 10px 0; 
+}
+
+#toc ul li a {
+    text-decoration: none; 
+    color: #007BFF; 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    transition: color 0.3s; 
+}
+
+#toc ul li a:hover {
+    color: #0056b3; 
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-recommendations {
+    background-color: #f9f9f9; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.game-recommendations h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.game-recommendations ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.game-recommendations ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+
+#game-details {
+    display: flex;  
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+
+.game-content p {
+    flex: 1;  
+    margin-right: 20px;  
+}
+
+.game-media {
+    width: 300px;  
+}
+
+
+.game-video {
+    position: relative;
+    width: 60%;
+    height: 0;
+    padding-bottom: 33%; 
+    margin-right: 20px;
+}
+
+.game-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+a[href*="https"] {
+    color: #007BFF; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+a[href*="https"]:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
+
+#summary {
+    background-color: #e8f4f8; 
+    padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#author-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#author-info h3 {
+    font-size: 1.3em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+#author-details-container {
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    gap: 20px; 
+}
+
+#author-icon {
+    width: 80px;  
+    height: 80px; 
+    border-radius: 50%; 
+}
+
+#author-description {
+    font-size: 1.1em;
+}
+
+#author-toggle {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+#author-toggle:hover {
+    background-color: #0056b3;
+}
+
+
+#author-details {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;  
+}
+
+
+#close-details {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+#close-details:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+}
